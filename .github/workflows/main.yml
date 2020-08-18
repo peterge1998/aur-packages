@@ -1,3 +1,5 @@
+name: Create PKGBUILD and create new release
+
 on:
   push:
     paths:

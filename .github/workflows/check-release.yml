@@ -1,8 +1,8 @@
-name: Get latest release version
+name: Get latest release version from jellyamp
 
 on:
   schedule:
-    - cron:  '*/6 * * * *'
+    - cron:  '0 */1 * * *'
 
 jobs:
   get-version:
