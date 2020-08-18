@@ -2,7 +2,7 @@ name: Get latest release version from jellyamp
 
 on:
   schedule:
-    - cron:  '0 */1 * * *'
+    - cron:  '*/10 * * * *'
 
 jobs:
   get-version:
