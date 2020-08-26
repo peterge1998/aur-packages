@@ -4,10 +4,10 @@ set -x
 #pacman -Sy git --noconfirm
 
 sudo -u devel bash -c 'cd ~ && 
-git clone https://github.com/peterge1998/hello-world-docker-action/ && \
+git clone https://github.com/peterge1998/aur-packages/ && \
 git clone https://aur.archlinux.org/jellyamp-appimage.git && \
 
-cd hello-world-docker-action/jellyfin-appimage/ && \
+cd aur-packages/jellyfin-appimage/ && \
 
 yes | cp -rf PKGBUILD.template PKGBUILD && \
 
@@ -23,5 +23,5 @@ makepkg --printsrcinfo > .SRCINFO && \
 
 echo "::set-output name=time::$time"'
 
-cp /home/devel/hello-world-docker-action/jellyfin-appimage/.SRCINFO /github/workspace/jellyfin-appimage/.SRCINFO
-cp /home/devel/hello-world-docker-action/jellyfin-appimage/PKGBUILD /github/workspace/jellyfin-appimage/PKGBUILD
+cp /home/devel/aur-packages/jellyfin-appimage/.SRCINFO /github/workspace/jellyfin-appimage/.SRCINFO
+cp /home/devel/aur-packages/jellyfin-appimage/PKGBUILD /github/workspace/jellyfin-appimage/PKGBUILD
