@@ -14,10 +14,6 @@ yes | cp -rf PKGBUILD.template PKGBUILD && \
 # set pkgver
 sed -i "s/package-version/$(curl -s https://api.github.com/repos/m0ngr31/jellyamp/releases/latest | grep tag_name | cut -d \" -f 4 | tr -d "v")/g" PKGBUILD && \
 
-# increase pkgrel
-pkgrel=$(($(grep pkgrel ~/jellyamp-appimage/PKGBUILD | cut -d \= -f 2) + 1)) && \
-sed -i "s/package-release/$pkgrel/g" PKGBUILD && \
-
 makepkg -g >> PKGBUILD && \
 makepkg --printsrcinfo > .SRCINFO && \
 
