@@ -1,4 +1,5 @@
 # aur-packages
 This repo contains AUR packages, which are submitted automatically to AUR via an github action.
 ## jellyamp-appimage
-[![jellyamp-appimage](https://img.shields.io/aur/version/jellyamp-appimage?color=1793d1&label=jellyamp-appimage&logo=arch-linux&style=for-the-badge)](https://aur.archlinux.org/packages/jellyamp-appimage/)
+| [m0ngr31/jellyamp](https://github.com/m0ngr31/jellyamp) | [![jellyamp](https://img.shields.io/github/v/release/m0ngr31/jellyamp)](https://github.com/m0ngr31/jellyamp/releases/) | [![jellyamp-appimage](https://img.shields.io/aur/version/jellyamp-appimage?color=1793d1&label=jellyamp-appimage&logo=arch-linux&style=for-the-badge)](https://aur.archlinux.org/packages/jellyamp-appimage/) |
+|---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
